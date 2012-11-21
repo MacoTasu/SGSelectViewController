@@ -7,31 +7,31 @@ This can display a selection menu easily. Moreover, this library corresponds to 
 Installation
 ============
 
-*Please take out SGSelectViewController.h and .m from Four users and put in your XcodeProject. 
-*Please describe SGSelectViewController.h to prefix.pch of your Xcode Project. 
-*Please also add QuartzCore.framework to your Xcode Project.
+1.Please take out SGSelectViewController.h and .m from Four users and put in your XcodeProject. 
+2.Please describe SGSelectViewController.h to prefix.pch of your Xcode Project.
+3.Please also add QuartzCore.framework to your Xcode Project.
 
 
 Usage
 =====
 
 @implementation <classname>{} of .m file of your project describes the next code.  
-'__strong SGSelectViewController * _sg;'
+`__strong SGSelectViewController * _sg;`
 
 Next, addSubview 
-'_sg = [[SGSelectViewController alloc]init];  [self.view addSubview:_sg.view];'
+`_sg = [[SGSelectViewController alloc]init];  [self.view addSubview:_sg.view];`
 
 Since preparation was completed now, the following method is only called. 
-'-(void)sgViewAppear;'
+`-(void)sgViewAppear;`
 The example of a source code.
-'[_sg sgViewAppear];'
+`[_sg sgViewAppear];`
 
 
 menu is displayed now.
-When you want to change the icon of a menu, it is necessary to add the created icon into your project and to change the picture name in arrangement called _ar in *-(void) setImage* of SGSelectViewController.m.
+When you want to change the icon of a menu, it is necessary to add the created icon into your project and to change the picture name in arrangement called _ar in **-(void) setImage** of SGSelectViewController.m.
 A maximum of 20 icons can be displayed. 
 
-Please adjust the position of a menu by *#define VIEW_ORIGIN_X* and *#define VIEW_ORIGIN_Y* in SGSelectViewController.m. 
+Please adjust the position of a menu by **#define VIEW_ORIGIN_X** and **#define VIEW_ORIGIN_Y** in SGSelectViewController.m. 
 
 
  
@@ -46,4 +46,4 @@ Please read a LICENSE file for details.
 
 Screen Shot
 ===========
-![Alt text](/images/ss.png)
+![Alt text](https://github.com/MacoTasu/SGSelectViewController/blob/master/images/ss.png)
