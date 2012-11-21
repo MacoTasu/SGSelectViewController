@@ -18,12 +18,12 @@ Usage
 @implementation <classname>{} of .m file of your project describes the next code.  
 `__strong SGSelectViewController * _sg;`
 
-Next, addSubview.
+Next, addSubview.  
 `_sg = [[SGSelectViewController alloc]init];  [self.view addSubview:_sg.view];`
 
-Since preparation was completed now, the following method is only called. 
-`-(void)sgViewAppear;`
-The example of a source code.
+Since preparation was completed now, the following method is only called.   
+`-(void)sgViewAppear;`  
+The example of a source code.  
 `[_sg sgViewAppear];`
 
 
