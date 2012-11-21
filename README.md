@@ -29,10 +29,10 @@ The example of a source code.
 
 
 menu is displayed now.
-When you want to change the icon of a menu, it is necessary to add the created icon into your project and to change the picture name in arrangement called _ar in **-(void) setImage** of SGSelectViewController.m.
+When you want to change the icon of a menu, it is necessary to add the created icon into your project and to change the picture name in arrangement called _ar in `-(void) setImage` of SGSelectViewController.m.
 A maximum of 20 icons can be displayed. 
 
-Please adjust the position of a menu by **#define VIEW_ORIGIN_X** and **#define VIEW_ORIGIN_Y** in SGSelectViewController.m. 
+Please adjust the position of a menu by `#define VIEW_ORIGIN_X` and `#define VIEW_ORIGIN_Y` in SGSelectViewController.m. 
 
 Since there is sample project, please check a motion. 
 
