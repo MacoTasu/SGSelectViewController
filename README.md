@@ -7,10 +7,11 @@ This can display a selection menu easily. Moreover, this library corresponds to 
 Installation
 ============
 
-1.Please take out SGSelectViewController.h and .m from Four users and put in your XcodeProject. 
-2.Please describe SGSelectViewController.h to prefix.pch of your Xcode Project.
-3.Please also add QuartzCore.framework to your Xcode Project.
-
+1.Please take out SGSelectViewController.h and .m from Four users and put in your XcodeProject.  
+2.Please describe SGSelectViewController.h to prefix.pch of your Xcode Project.  
+3.Please also add QuartzCore.framework to your Xcode Project.  
+4.Please add an `images` folder to your XcodeProject.   
+5.Finished installation.  
 
 Usage
 =====
@@ -33,8 +34,6 @@ A maximum of 20 icons can be displayed.
 
 Please adjust the position of a menu by **#define VIEW_ORIGIN_X** and **#define VIEW_ORIGIN_Y** in SGSelectViewController.m. 
 
-
- 
 Since there is sample project, please check a motion. 
 
 
