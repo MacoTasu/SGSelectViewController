@@ -46,4 +46,4 @@ Please read a LICENSE file for details.
 
 Screen Shot
 ===========
-![](https://github.com/MacoTasu/SGSelectViewController/blob/master/images/ss.png)
+![](http://makotoshiga.com/github/images/ss.png)
