@@ -20,7 +20,6 @@
 -(void)didEnd;
 @end
 
-#define VIEW_W 300
 #define VIEW_ORIGIN_X 10
 #define VIEW_ORIGIN_Y 70
 #define BUTTOM_MARGIN 20
@@ -123,7 +122,7 @@
         x = [_iconArray count]/ONE_ROW_ICON ;
 
     [self.view setAlpha:0.0];
-    [self.view setFrame:CGRectMake(VIEW_ORIGIN_X, VIEW_ORIGIN_Y, VIEW_W, BUTTOM_MARGIN + (BTN_W_H+MARGIN_Y)*x)];
+    [self.view setFrame:CGRectMake(VIEW_ORIGIN_X, VIEW_ORIGIN_Y, (MARGIN_X+BTN_W_H)*ONE_ROW_ICON+MARGIN_X, BUTTOM_MARGIN + (BTN_W_H+MARGIN_Y)*x)];
     [self.view setClipsToBounds:true];
     [self.view setBackgroundColor:[UIColor blackColor]];
     UIImage *backgroundImage = [UIImage imageNamed:@"balloon.png"];
