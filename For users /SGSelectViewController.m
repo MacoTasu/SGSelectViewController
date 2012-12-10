@@ -7,6 +7,7 @@
 //
 
 #import "SGSelectViewController.h"
+#import "AppDelegate.h"
 
 @interface SGSelectViewController ()
 - (id)init;
@@ -24,17 +25,16 @@
 #define VIEW_ORIGIN_Y 70
 #define BUTTOM_MARGIN 20
 #define TOP_MARGIN 21
+#define MARGIN_X 10
+#define MARGIN_Y 10
 
 
 //-------------------------
-// You should change the following five sizes
+// You should change the following two sizes
 //    if you want to change the number of a party's icons or icons sizes.
 //-------------------------
 #define BTN_W_H 48
 #define ONE_ROW_ICON 5
-#define MARGIN_X 10
-#define MARGIN_Y 10
-
 
 //-------------------------
 // The number of buttons needs to be the same as the number of [NSDictionary count].
@@ -59,7 +59,7 @@
     if (self) {
         
         //-------------------------
-        // initialize 
+        // initialize
         //-------------------------
         [self setView:[[UIView alloc] init]];
         _iconArray = [[NSMutableArray alloc]init];
@@ -92,17 +92,27 @@
 //-------------------------
 -(void)setImage{
     
-   _ar = [NSArray arrayWithObjects:
-          @"plan_rest.png",
-          @"plan_train.png",
-          @"plan_structure.png",
-          @"plan_nature.png",
-          @"plan_walk.png",
-          @"plan_shopping.png",
-          @"plan_eat.png",
-          @"plan_plane.png",
-          @"plan_sports.png",nil];
-
+    _ar = [NSArray arrayWithObjects:
+           @"plan_rest.png",
+           @"plan_train.png",
+           @"plan_structure.png",
+           @"plan_nature.png",
+           @"plan_walk.png",
+           @"plan_shopping.png",
+           @"plan_eat.png",
+           @"plan_plane.png",
+           @"plan_sports.png",
+           @"plan_nature.png",
+           @"plan_walk.png",
+           @"plan_shopping.png",
+           @"plan_eat.png",
+           @"plan_plane.png",
+           @"plan_sports.png",
+           @"plan_eat.png",
+           @"plan_plane.png",
+           @"plan_sports.png",
+           @"plan_rest.png",
+           @"plan_structure.png",nil];
 }
 
 
@@ -120,7 +130,7 @@
         x = [_iconArray count]/ONE_ROW_ICON + 1;
     else
         x = [_iconArray count]/ONE_ROW_ICON ;
-
+    
     [self.view setAlpha:0.0];
     [self.view setFrame:CGRectMake(VIEW_ORIGIN_X, VIEW_ORIGIN_Y, (MARGIN_X+BTN_W_H)*ONE_ROW_ICON+MARGIN_X, BUTTOM_MARGIN + (BTN_W_H+MARGIN_Y)*x)];
     [self.view setClipsToBounds:true];
@@ -154,13 +164,13 @@
             [_btn[count] addTarget:self action:@selector(changeIcon:) forControlEvents:UIControlEventTouchUpInside];
             [_btn[count] setTag:count];
             [self.view addSubview:_btn[count]];
-        
+            
             index++;
             count++;
-        
+            
             if(index%ONE_ROW_ICON == 0){
                 row++;
-            index = 0;
+                index = 0;
             }
         }
         
@@ -220,7 +230,7 @@
 // Appear sgView animation
 //-------------------------
 -(void)sgViewAppear{
-
+    
     [UIView beginAnimations:nil context:nil];
     [UIView setAnimationDuration:0.2];
     [UIView setAnimationDelegate:self];
@@ -235,8 +245,8 @@
 // Tap OK Button Action
 //-------------------------
 -(void)didEnd{
-
-
+    
+    
     [self sgViewDissAppear];
     
 }
@@ -246,9 +256,6 @@
 // After end animaiton
 //-------------------------
 -(void)endAnimation{
-
-    //The processing after view disappears here is described.
-    
     
     /*NSDictionary *tmpDic;
     if (_iconNumber == -1) {
@@ -259,7 +266,8 @@
         tmpDic = [NSDictionary dictionaryWithObject:[_iconArray objectAtIndex:_iconNumber] forKey:@"icon"];
     }*/
     
-
+    
+    
 }
 
 

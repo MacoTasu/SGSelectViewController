@@ -25,17 +25,16 @@
 #define VIEW_ORIGIN_Y 70
 #define BUTTOM_MARGIN 20
 #define TOP_MARGIN 21
+#define MARGIN_X 10
+#define MARGIN_Y 10
 
 
 //-------------------------
-// You should change the following five sizes
+// You should change the following two sizes
 //    if you want to change the number of a party's icons or icons sizes.
 //-------------------------
 #define BTN_W_H 48
 #define ONE_ROW_ICON 5
-#define MARGIN_X 10
-#define MARGIN_Y 10
-
 
 //-------------------------
 // The number of buttons needs to be the same as the number of [NSDictionary count].
@@ -102,8 +101,18 @@
           @"plan_shopping.png",
           @"plan_eat.png",
           @"plan_plane.png",
-          @"plan_sports.png",nil];
-
+          @"plan_sports.png",
+          @"plan_nature.png",
+          @"plan_walk.png",
+          @"plan_shopping.png",
+          @"plan_eat.png",
+          @"plan_plane.png",
+          @"plan_sports.png",
+          @"plan_eat.png",
+          @"plan_plane.png",
+          @"plan_sports.png",
+          @"plan_rest.png",
+          @"plan_structure.png",nil];
 }
 
 
