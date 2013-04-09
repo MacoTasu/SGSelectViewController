@@ -45,4 +45,4 @@ Please read a LICENSE file for details.
 
 Screen Shot
 ===========
-![](http://makotoshiga.com/github/images/ss.png)
+![](images/ss.png)
